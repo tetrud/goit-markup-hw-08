@@ -1,0 +1,22 @@
+
+@mixin position($ps-a, $top, $left) {
+  position: $ps-a;
+  top: $top;
+  left: $left;
+}
+
+@mixin flex($df, $ai) {
+  display: $df;
+  align-items: $ai;
+}
+
+@mixin font($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

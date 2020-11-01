@@ -1,0 +1,20 @@
+.client-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    @include flex(flex, center);
+    justify-content: center;
+    @include size(170px, 90px);   
+    border: 1px solid $icon-color;
+    fill: $icon-color;
+    border-radius: 4px;
+    transition: border 250ms $timing-function, fill 250ms $timing-function;
+
+    .client-list__item:hover &,
+    .client-list__item:focus & {
+      border: 1px solid $accent-color;
+      fill: $accent-color;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// Utils
+@import "./utils/veriables";
+@import "./utils/mixin";
+@import "./utils/visually-hidden";
+
+// Base
+@import "./base/animation";
+@import "./base/common";
+@import "./base/conteiner";
+
+// Components
+@import "./components/logo";
+@import "./components/modal-btn";
+@import "./components/modal";
+@import "./components/section";
+@import "./components/socials-list";
+
+// Layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantades";
+@import "./layout/design";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/footer";

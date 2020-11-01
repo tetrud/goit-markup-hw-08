@@ -1,0 +1,107 @@
+.footer-page {
+  padding: 60px 0px;
+  background-color: #2f303a;
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    @include font(700, 14, 1.14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+  }
+}
+
+.footer-wrap {
+  @include flex(flex, baseline);
+}
+
+/* footer-address */
+
+.footer-address {
+  &__list {
+    margin-right: 69px;
+  }
+
+  &__item {
+    font-weight: 400;
+    line-height: 1.71;
+
+    &:not(last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__link-map {
+    color: $secondary-text-color;
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__link-contact {
+    color: $light-text-color;
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+/*footer-subscribe */
+
+.footer-subscribe {
+  margin-left: auto;
+
+  &__input {
+    @include size(358px, 50px);
+    padding: 0px 16px;
+    margin-right: 12px;
+    color: $light-text-color;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: $light-text-color;
+    }
+  }
+
+  &__btn {
+    @include flex(inline-flex, baseline);
+    justify-content: center;
+    width: 200px;
+    padding: 10px 0px;
+    font-family: inherit;
+    @include font(700, 16px, 1.87);
+    letter-spacing: 0.06em;
+    border: none;
+    color: $primary-white-color;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+    &::after {
+      content: "";
+      @include size(24px, 24px);
+      margin-left: 15px;
+      background-image: url("../images/icones/icon-send.svg");
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}

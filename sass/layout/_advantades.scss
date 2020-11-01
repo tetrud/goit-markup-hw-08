@@ -1,0 +1,54 @@
+.advantades-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: calc((100% - 30px * 4) / 4);
+
+    &::before {
+      content: "";
+      display: block;
+      @include size(100%, 120px);
+      margin-bottom: 30px;
+      background-color: $secondary-greey-color;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include font(700, inherit, 1.14);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $paragraph-text-color;
+    font-weight: 400;
+    line-height: 1.71;
+  }
+
+  &__icon-antenna::before {
+    content: "";
+    background-image: url("../images/icones/antenna.svg");
+  }
+
+  &__icon-clock::before {
+    content: "";
+    background-image: url("../images/icones/clock.svg");
+  }
+
+  &__icon-diagram::before {
+    content: "";
+    background-image: url("../images/icones/diagram.svg");
+  }
+
+  &__icon-astronaut::before {
+    content: "";
+    background-image: url("../images/icones/astronaut.svg");
+  }
+}

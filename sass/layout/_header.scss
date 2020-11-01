@@ -1,0 +1,94 @@
+.header-page {
+  @include position(fixed, 0, 0);
+  width: 100%;
+
+  z-index: 1000;
+  background-color: $primary-white-color;
+  border-bottom: 1px solid #ececec;
+
+  &__navigation {
+    @include flex(flex, center);
+  }
+}
+
+/* Navigation */
+
+.navigation {
+  @include flex(flex, center);
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    &--current {
+      color: $accent-color;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        bottom: -1.5px;
+        left: 0;
+        content: "";
+        display: block;
+        @include size(100%, 4px);
+        border-radius: 2px;
+        background-color: $accent-color;
+        animation: line 1000ms $timing-function;
+      }
+    }
+  }
+}
+
+/* Address */
+
+.address {
+  display: flex;
+  margin-left: auto;
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__link {
+    @include flex(flex, center);
+    padding: 32px 0px;
+    color: $paragraph-text-color;
+    font-style: normal;
+    @include font(500, 14px, 1.14);   
+    letter-spacing: 0.02em;
+    transition: color 250ms $timing-function;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: inherit;
+    }
+  }
+}

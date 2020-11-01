@@ -1,0 +1,21 @@
+.logo {
+  margin-right: 86px;
+  font-family: "Raleway", sans-serif;
+  @include font(700, 26px, 1.2);
+  color: #000000;
+  transition: color 250ms $timing-function;
+
+  &-accent,
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &-footer {
+    display: inline-block;
+    color: $secondary-text-color;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    transition: color 250ms $timing-function;
+  }
+}
