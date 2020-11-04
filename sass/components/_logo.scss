@@ -1,9 +1,19 @@
 .logo {
-  margin-right: 86px;
+  display: block;
+  padding: 16px 0px;
   font-family: "Raleway", sans-serif;
-  @include font(700, 26px, 1.2);
+  @include font(700, 24px, 28px);
   color: #000000;
   transition: color 250ms $timing-function;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0px;
+    margin-right: 86px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 31px);
+  }
 
   &-accent,
   &:hover,
@@ -11,11 +21,12 @@
     color: $accent-color;
   }
 
-  &-footer {
-    display: inline-block;
+  &--footer {
     color: $secondary-text-color;
-    margin-bottom: 20px;
-    margin-right: 0px;
     transition: color 250ms $timing-function;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
+    }
   }
 }

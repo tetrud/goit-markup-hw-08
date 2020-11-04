@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
 
-  &__item:not(:last-child) {
-    margin-right: 10px;
+  &--footer {
+    width: 206px;
+    margin: 0 auto;
   }
-
   &__link {
-    @include flex(flex, center);
+    @include display(flex, center);
     justify-content: center;
     @include size(44px, 44px);
     border-radius: 50%;

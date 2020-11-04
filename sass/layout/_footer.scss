@@ -2,30 +2,38 @@
   padding: 60px 0px;
   background-color: #2f303a;
 
+  &__wrap {
+    @media screen and (min-width: 768px) {
+      @include display(flex, baseline);
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
+
   &__title {
     display: block;
     margin-bottom: 20px;
-    @include font(700, 14, 1.14);
+    @include font(700, 14px, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-text-color;
   }
 }
 
-.footer-wrap {
-  @include flex(flex, baseline);
-}
-
-/* footer-address */
+// Footer-Address */
 
 .footer-address {
-  &__list {
-    margin-right: 69px;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
   }
 
   &__item {
-    font-weight: 400;
-    line-height: 1.71;
+    @include font(400, 14px, 16px);
 
     &:not(last-child) {
       margin-bottom: 9px;
@@ -53,15 +61,32 @@
   }
 }
 
-/*footer-subscribe */
+// Socials-Footer
+
+.socials-footer {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+// Footer-Subscribe
 
 .footer-subscribe {
-  margin-left: auto;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include display(flex, center);
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
   &__input {
-    @include size(358px, 50px);
     padding: 0px 16px;
-    margin-right: 12px;
+
+    margin-bottom: 20px;
+    @include size(100%, 50px);
     color: $light-text-color;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -69,20 +94,24 @@
     border-radius: 4px;
     outline: none;
 
+    @media screen and (min-width: 1200px) {
+      @include size(358px, 50px);
+      margin-right: 12px;
+    }
+
     &::placeholder {
-      font-size: 16px;
-      line-height: 1.25;
+      @include font(400, 16px, 20px);
       color: $light-text-color;
     }
   }
 
   &__btn {
-    @include flex(inline-flex, baseline);
+    @include display(inline-flex, center);
     justify-content: center;
     width: 200px;
     padding: 10px 0px;
     font-family: inherit;
-    @include font(700, 16px, 1.87);
+    @include font(700, 16px, 30px);
     letter-spacing: 0.06em;
     border: none;
     color: $primary-white-color;
@@ -96,7 +125,7 @@
       content: "";
       @include size(24px, 24px);
       margin-left: 15px;
-      background-image: url("../images/icones/icon-send.svg");
+      background-image: url("/icones/icon-send.svg");
     }
 
     &:hover,

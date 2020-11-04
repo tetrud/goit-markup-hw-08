@@ -4,6 +4,11 @@
   @include size(100%, 100%);
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 250ms $timing-function;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding: 93px 15px;
+  }
 
   &.is-hidden {
     opacity: 0;
@@ -14,14 +19,28 @@
 }
 
 .modal {
-  @include position(absolute, 50%, 50%);
-  @include size(528px, 581px);
+  width: 100%;
+  position: relative;
   padding: 40px;
   border-radius: 4px;
   background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%) scale(1);
   transition: all 250ms $timing-function 250ms;
+
+  @media screen and (min-width: 480px) {
+    @include size(100%, 609px);
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include position(absolute, 50%, 50%);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  @media screen and (min-width: 1200px) {
+    @include size(100%, 581px);
+    max-width: 528px;
+  }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
@@ -32,7 +51,10 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    @include display(flex, center);
+    justify-content: center;
     @include size(30px, 30px);
+
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
@@ -41,6 +63,7 @@
 
   &__icon-close {
     @include size(11px, 11px);
+
     transition: fill 250ms $timing-function;
 
     .modal__close-btn:hover &,
@@ -50,21 +73,25 @@
   }
 }
 
-/* Modal form */
+// Modal-Form
+
 .modal-form {
   display: flex;
   flex-direction: column;
 
   &__text {
     margin: 0px 0px 12px 0px;
-    @include font(700, 20px, 1.15);
+    @include font(700, 20px, 30px);
     text-align: center;
     color: $title-text-color;
+
+    @media screen and (min-width: 1200px) {
+      @include font(700, 20px, 23px);
+    }
   }
 
   &__label {
-    font-weight: 12px;
-    line-height: 1.16;
+    @include font(400, 12px, 14px);
     letter-spacing: 0.01em;
     color: $paragraph-text-color;
   }
@@ -103,8 +130,7 @@
     }
 
     &::placeholder {
-      font-size: 14px;
-      line-height: 1.14;
+      @include font(400, 12px, 14px);
       color: rgba(117, 117, 117, 0.5);
     }
   }
@@ -121,7 +147,7 @@
   }
 
   &__checkbox {
-    @include flex(flex, center);
+    @include display(flex, center);
     margin: 0px auto 30px;
   }
 
@@ -148,7 +174,7 @@
 
     .modal-form__checkbox-input:checked + & {
       background-color: $accent-color;
-      background-image: url("../images/icones/icon-check.svg");
+      background-image: url("/icones/icon-check.svg");
       background-size: contain;
       background-origin: border-box;
       border-color: $accent-color;
@@ -156,8 +182,15 @@
   }
 
   &__checkbox-text {
-    line-height: 1.71;
     color: $paragraph-text-color;
+
+    @media screen and (min-width: 480px) {
+      @include font(400, 12px, 14px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include font(400, 14px, 24px);
+    }
 
     &--accent {
       color: $accent-color;
