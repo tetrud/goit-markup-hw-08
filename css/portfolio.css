@@ -168,7 +168,7 @@ img {
 @media screen and (min-width: 1200px) {
   .no-padding {
     display: block;
-    padding: 0px;
+    padding-top: 0px;
   }
 }
 
@@ -907,7 +907,7 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 15px;
-  background-image: url("/icones/icon-send.svg");
+  background-image: url("./../icones/icon-send.svg");
 }
 
 .footer-subscribe__btn:hover, .footer-subscribe__btn:focus {

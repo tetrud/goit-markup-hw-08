@@ -174,7 +174,7 @@
 
     .modal-form__checkbox-input:checked + & {
       background-color: $accent-color;
-      background-image: url("/icones/icon-check.svg");
+      background-image: url("./../icones/icon-check.svg");
       background-size: contain;
       background-origin: border-box;
       border-color: $accent-color;

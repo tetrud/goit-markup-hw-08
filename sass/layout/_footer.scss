@@ -125,7 +125,7 @@
       content: "";
       @include size(24px, 24px);
       margin-left: 15px;
-      background-image: url("/icones/icon-send.svg");
+      background-image: url("./../icones/icon-send.svg");
     }
 
     &:hover,
