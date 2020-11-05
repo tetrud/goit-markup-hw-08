@@ -56,25 +56,26 @@
     margin: 0;
     color: $paragraph-text-color;
     @include font(400, 14px, 24px);
+    background-image: url("");
   }
 
   &__icon-antenna::before {
     content: "";
-    background-image: url("../../icones/antenna.svg");
+    background-image: url("./../icones/antenna.svg");
   }
 
   &__icon-clock::before {
     content: "";
-    background-image: url("../../icones/clock.svg");
+    background-image: url("./../icones/clock.svg");
   }
 
   &__icon-diagram::before {
     content: "";
-    background-image: url("../../icones/diagram.svg");
+    background-image: url("./../icones/diagram.svg");
   }
 
   &__icon-astronaut::before {
     content: "";
-    background-image: url("../../icones/astronaut.svg");
+    background-image: url("./../icones/astronaut.svg");
   }
 }

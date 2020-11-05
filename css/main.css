@@ -822,8 +822,8 @@ img {
   margin-top: 60px;
   text-align: center;
   padding: 118px 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("images/banner/banner-mobile.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("images/banner/banner-mobile.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/banner/banner-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/banner/banner-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -862,8 +862,8 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("images/banner/banner-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("images/banner/banner-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/banner/banner-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/banner/banner-mobile@2x.jpg");
   }
 }
 
@@ -871,16 +871,16 @@ img {
   .hero {
     max-width: 768px;
     margin-top: 80px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("images/banner/banner-tablet.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("images/banner/banner-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/banner/banner-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/banner/banner-tablet.jpg");
     background-size: 768px 400px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("images/banner/banner-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("images/banner/banner-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/banner/banner-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/banner/banner-tablet@2x.jpg");
   }
 }
 
@@ -889,16 +889,16 @@ img {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("images/banner/banner-desktop.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("images/banner/banner-desktop.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/banner/banner-desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/banner/banner-desktop.jpg");
     background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("images/banner/banner-desktop@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("images/banner/banner-desktop@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/banner/banner-desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/banner/banner-desktop@2x.jpg");
   }
 }
 
@@ -976,26 +976,27 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
+  background-image: url("");
 }
 
 .advantades-list__icon-antenna::before {
   content: "";
-  background-image: url("../../icones/antenna.svg");
+  background-image: url("./../icones/antenna.svg");
 }
 
 .advantades-list__icon-clock::before {
   content: "";
-  background-image: url("../../icones/clock.svg");
+  background-image: url("./../icones/clock.svg");
 }
 
 .advantades-list__icon-diagram::before {
   content: "";
-  background-image: url("../../icones/diagram.svg");
+  background-image: url("./../icones/diagram.svg");
 }
 
 .advantades-list__icon-astronaut::before {
   content: "";
-  background-image: url("../../icones/astronaut.svg");
+  background-image: url("./../icones/astronaut.svg");
 }
 
 .design-list {
