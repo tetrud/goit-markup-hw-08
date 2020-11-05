@@ -163,10 +163,16 @@
 
   &__checkbox-icon {
     display: block;
+    padding: 5px;
     @include size(16px, 15px);
+
     margin-right: 7px;
     border: 2px solid $title-text-color;
     border-radius: 2px;
+
+    @media screen and(min-width:480px) {
+      padding: 0px;
+    }
 
     .modal-form__checkbox-input:focus + & {
       outline: 1px solid $accent-color;
@@ -183,10 +189,7 @@
 
   &__checkbox-text {
     color: $paragraph-text-color;
-
-    @media screen and (min-width: 480px) {
-      @include font(400, 12px, 14px);
-    }
+    @include font(400, 12px, 14px);
 
     @media screen and (min-width: 1200px) {
       @include font(400, 14px, 24px);
